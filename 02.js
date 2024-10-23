@@ -1,4 +1,4 @@
-function shiftSelectedLeft(data, selected) {
+const shiftSelectedLeft = (data, selected) => {
 	selected.sort();
 	const copy = [...data];
 
@@ -7,7 +7,6 @@ function shiftSelectedLeft(data, selected) {
 		if(selectedIdx !== dataIdx) {
 			if(dataIdx - 1 >= 0) {
 				const temp = copy[dataIdx];
-				console.log('temp', temp);
 				copy[dataIdx] = copy[dataIdx - 1];
 				copy[dataIdx - 1] = temp;
 			}
