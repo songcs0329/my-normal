@@ -50,3 +50,4 @@ const calculateMBTI = (responses) => {
 };
 
 calculateMBTI([2, 2, 2, 2, 2, 2, 2, 2]); // ENFP
+calculateMBTI([0, 0, 0, 0, 4, 4, 4, 4]); // ENFP
